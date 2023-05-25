@@ -1,0 +1,14 @@
+def split_and_join():
+    name=input()
+    
+    split_name= name.split(" ")
+    
+    join_name=split_name[0]
+    for i in split_name:
+        if i == split_name[0]:
+            continue
+        join_name=join_name+"-"+i
+        
+    print(join_name)
+ 
+split_and_join()
