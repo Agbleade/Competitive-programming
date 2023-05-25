@@ -1,0 +1,19 @@
+def swap_case():
+        name=input("Enter your the name: ")
+        for character in name:
+             if character.islower() is True and character is name[0]:
+                  reverse_name=name[0].upper()
+             elif character.isupper() and character is name[0]:
+                  reverse_name=name[0].lower()
+        for character in name:
+            if character is name[0]:
+                 continue
+            if character.islower() is True:
+                reverse_name=reverse_name+ character.upper() 
+            elif character.isupper() is True:
+                reverse_name=reverse_name+character.lower()
+        print(reverse_name)
+           
+
+
+swap_case()
