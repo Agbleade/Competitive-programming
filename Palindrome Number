@@ -1,0 +1,6 @@
+number= input()
+reverse_number=number[::-1]
+if number==reverse_number:
+    print("True")
+else:
+    print("False")
